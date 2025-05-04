@@ -1,4 +1,4 @@
-## 📦 Microservice System - Pub/Sub Architecture with Node.js, MongoDB & Redis
+## 📦 Microservice - Pub/Sub Architecture with Node.js, MongoDB & Redis
 
 This project demonstrates a scalable microservices architecture using Node.js, Express, MongoDB, and Redis with a Pub/Sub communication model.
 
@@ -25,7 +25,7 @@ Build two services:
 graph TD;
     A[Client POSTs Data] --> B[Receiver Service];
     B --> C[Validate & Save to MongoDB];
-    C --> D[Publish to Redis (user_created)]; 
+    C --> D[Publish to Redis \(user_created\)]; 
     D --> E[Listener Service Subscribes];
     E --> F[Add modified_at];
     F --> G[Save to MongoDB - Processed Collection];
